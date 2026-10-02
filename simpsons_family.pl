@@ -46,19 +46,19 @@ ancestor(X,Z):- parent(X,Z).
 ancestor(X,Z):- parent(X,Y),ancestor(Y,Z).
 
 % query test ===========
-: 8 ?- uncle(herb,X).
+% : 8 ?- uncle(herb,X).
 % bart ;
-$ lisa ;
+% lisa ;
 % X = maggie.
 
-%11 ?- ancestor(jackie, X).  
-%X = marge ;
-%X = patty ;
-%X = selma ;
-%X = bart ;
-%X = lisa ;
-%X = maggie ;
-%X = ling ;
+% 11 ?- ancestor(jackie, X).  
+% X = marge ;
+% X = patty ;
+% X = selma ;
+% X = bart ;
+% X = lisa ;
+% X = maggie ;
+% X = ling ;
 % false.
 
 

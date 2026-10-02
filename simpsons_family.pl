@@ -45,5 +45,22 @@ cousin(X,Y):- parent(P1,X),parent(P2,Y),brother(P1,P2).
 ancestor(X,Z):- parent(X,Z).
 ancestor(X,Z):- parent(X,Y),ancestor(Y,Z).
 
+% query test ===========
+: 8 ?- uncle(herb,X).
+% bart ;
+$ lisa ;
+% X = maggie.
+
+%11 ?- ancestor(jackie, X).  
+%X = marge ;
+%X = patty ;
+%X = selma ;
+%X = bart ;
+%X = lisa ;
+%X = maggie ;
+%X = ling ;
+% false.
+
+
 
 
